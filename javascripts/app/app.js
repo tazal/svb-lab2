@@ -1,5 +1,4 @@
-var userImage = new Array(10),
-  userName = new Array(10),
+var userName = new Array(10),
   tweetText = new Array(10),
   i;
 
@@ -30,14 +29,31 @@ var main = function () {
   var twitter = new ctwitter.CTwitter();
   twitter.stream("statuses/filter", { lang: "en", track: ["javascript", "jslint"] }, function (stream) {
     stream.on("data", function (tweet) {
-      queue(userImage, tweet.profile_image_url);
       queue(userName, tweet.from_user);
       queue(tweetText, tweet.text);
-      for(i = 0; i <= 9; i++) {
-        if (tweetText[i] !== undefined) {
-          $("#feed").html("<img src ='" + userImage[i] + "' width='50' />" + "<h4>" + userName[i] + "</h4>" + "<p>" + tweetText[i] + "</p>");              
+      //for(i = 0; i <= 9; i += 1) {
+        if (tweetText[9] !== undefined) {
+          $("#tweet1").html("<h4>" + userName[9] + "</h4>" + "<p>" + tweetText[9] + "</p>"); 
+        }  
+        
+        if(tweetText[8] !== undefined) {
+            $("#tweet2").html("<h4>" + userName[8] + "</h4>" + "<p>" + tweetText[8] + "</p>"); 
+        }    
+        
+        if(tweetText[7] !== undefined) {
+                $("#tweet3").html("<h4>" + userName[7] + "</h4>" + "<p>" + tweetText[7] + "</p>");
         }
-      }
+        
+        if(tweetText[6] !== undefined) {
+                $("#tweet4").html("<h4>" + userName[6] + "</h4>" + "<p>" + tweetText[6] + "</p>");
+        }
+        
+        if(tweetText[5] !== undefined) {
+                $("#tweet5").html("<h4>" + userName[5] + "</h4>" + "<p>" + tweetText[5] + "</p>");
+        }
+        
+      //}
+      
     });
   });
 };
