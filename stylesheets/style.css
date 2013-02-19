@@ -4,6 +4,7 @@ body {
 
 #feed {
   float: right;
+  text-align:center;
   background: #000000;
   color:#99DDEE;
   opacity: .9;
