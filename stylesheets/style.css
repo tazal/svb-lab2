@@ -3,12 +3,15 @@ body {
 }
 
 #feed {
+  font-family: "Helvetica", sans-serif;
   float: right;
-  text-align:center;
+  width: 50%;
+  text-align: center;
   background: #000000;
   color:#99DDEE;
   opacity: .9;
   margin: 0px;
+  padding: 10px;
 }
 
 #tracking {
@@ -32,4 +35,10 @@ h3 {
   font-family: "Helvetica", sans-serif;
   opacity: .8;
   color:#000000;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-family: "Helvetica", sans-serif;
+
 }
