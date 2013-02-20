@@ -23,7 +23,7 @@ var main = function () {
       if (tweetText[9] !== undefined) {
         $("#tweet1").html("<h4>" + userName[9] + "</h4>" + "<p>" + tweetText[9] + "</p>");
         $("#tweet1").fadeIn("slow", function() {
-          $("#tweet1").delay("100").hide();
+          $("#tweet1").hide();
         });
       }  
         
