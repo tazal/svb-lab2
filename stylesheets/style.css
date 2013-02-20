@@ -5,7 +5,7 @@ body {
 #feed {
   font-family: "Helvetica", sans-serif;
   float: right;
-  width: 50%;
+  width: 75%;
   text-align: center;
   background: #000000;
   color:#99DDEE;
@@ -15,11 +15,11 @@ body {
 }
 
 .tweet {
-  height: 100px;
+  height: 50px;
 }
 
 #tracking {
-  width: 33%;
+  width: 20%;
   height: 640px;
   float: left;
   background: #99DDEE;
@@ -35,14 +35,26 @@ body {
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 2em;
   font-family: "Helvetica", sans-serif;
   opacity: .8;
   color:#000000;
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 12px;
   font-family: "Helvetica", sans-serif;
 
+}
+
+p {
+  font-size: 10px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+#tweet1 {
+  display:none;
 }
